@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forside</title>
+    </head>
+    <body>
+        <header>
+            <h1>Forsiden!</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="validering.html">Valideringsoppgaven</a></li>
+                    <li><a href="mal.html">Mal</a></li>
+                    <li><a href="contact.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+           <section>
+            <h2>Registrering</h2>
+           </section>
+           <section>
+            <h3>Her kan du registrere deg</h3>
+            <form method="post">
+                <label for="navn">Navn:</label>
+                <input type="text" name="navn" id="navn" placeholder="Peter Petersen" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                <label>
+                    E-post:
+                    <input type="email" name="email" placeholder="eksempel@email.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                </label>
+                <label>Passord:
+                    <input type="text" name="passord" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </label>
+                <label>
+                    Alder:
+                    <input type="number" min="18" max="99" required>
+                </label>
+                <label>
+                    Telefon:
+                    <input type="tel" name="telefon" pattern="[0-9]{8,12}" required>
+                </label>
+                <label>
+                    Fødselsdato:
+                    <input type="date" max="2023-12-31" required>
+                </label>
+                <label>
+                    Mann:
+                    <input type="radio" name="valg" required>
+                </label>
+                <label>
+                    Kvinne:
+                    <input type="radio" name="valg" required>
+                </label>
+                <label>
+                    Annet:
+                    <input type="radio" name="valg" required>
+                </label>
+                <label>
+                    Land:
+                    <select name="land" required>
+                        <option value="">Norge</option>
+                        <option value="">Sverige</option>
+                        <option value="">Danmark</option>
+                    </select>
+                </label>
+                <label>
+                    Kryss av for å sendes:
+                    <input type="checkbox" required>
+                </label>
+                <input type="submit" value="Send inn">
+            </form>
+           </section>
+        </main>
+    <footer>
+        <p>Sayotika Uantakhob Trulsen 2024</p>
+        <p>Sayotikauantakhob@gmail.com</p>
+    </footer>
+    </body>
+</html>

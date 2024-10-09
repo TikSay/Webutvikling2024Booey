@@ -31,7 +31,6 @@ img{
 }
 .flex-space-b{
     display:flex;
-
     justify-content:space-between;
     flex-wrap: wrap;
     gap: 1rem;
