@@ -1,0 +1,8 @@
+@use 'loginn.scss';
+@use 'layout.scss';
+@import 'colors.scss';
+
+body{
+    background-color:$blue;
+    height: 100vh;
+}
